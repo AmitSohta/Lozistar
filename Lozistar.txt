@@ -1,0 +1,75 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lozistar – All-in-One Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Roboto', sans-serif; line-height: 1.6; color: #222; background: #fff; }
+    header { background: #fff; color: #222; padding: 30px 20px; text-align: center; border-bottom: 1px solid #ddd; }
+    header img { width: 250px; display: block; margin: 0 auto 20px; }
+    header h1 { font-size: 2.5em; }
+    nav { background: #222; color: white; display: flex; justify-content: center; padding: 10px 0; flex-wrap: wrap; }
+    nav a { color: white; text-decoration: none; margin: 5px 15px; }
+    nav a:hover { text-decoration: underline; }
+    section { padding: 60px 20px; max-width: 1000px; margin: auto; }
+    .services img { width: 200px; border-radius: 8px; margin-bottom: 10px; }
+    .service-logo { width: 40px; vertical-align: middle; margin-right: 10px; }
+    .service-box { margin-bottom: 40px; }
+    footer { background: #222; color: white; text-align: center; padding: 20px 10px; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="lozistar.png" alt="Lozistar Logo">
+    <h1>Lozistar</h1>
+    <p>Everything You Need, One Click Away</p>
+  </header>  <nav>
+    <a href="#services">Services</a>
+    <a href="food.html">Food Order</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms</a>
+    <a href="disclaimer.html">Disclaimer</a>
+    <a href="#contact">Contact</a>
+  </nav>  <section id="services" class="services">
+    <h2>Our Services</h2><div class="service-box">
+  <h3><img src="https://img.icons8.com/ios-filled/50/meal.png" class="service-logo"> Food Delivery</h3>
+  <img src="https://source.unsplash.com/800x400/?food" alt="Food Delivery">
+  <p>Order delicious meals from local restaurants and get doorstep delivery. <a href="food.html">Order Now</a></p>
+</div>
+
+<div class="service-box">
+  <h3><img src="https://img.icons8.com/ios-filled/50/hotel.png" class="service-logo"> Hotel Booking <span style="color: red;">(Coming Soon)</span></h3>
+  <img src="https://source.unsplash.com/800x400/?hotel" alt="Hotel Booking">
+  <p>Book top-rated hotels. Coming soon to Shimla region!</p>
+</div>
+
+<div class="service-box">
+  <h3><img src="https://img.icons8.com/ios-filled/50/car.png" class="service-logo"> Taxi & Bike Booking <span style="color: red;">(Coming Soon)</span></h3>
+  <img src="https://source.unsplash.com/800x400/?taxi" alt="Taxi Booking">
+  <p>Need a ride? Book taxis or bikes in seconds. Coming soon.</p>
+</div>
+
+<div class="service-box">
+  <h3><img src="https://img.icons8.com/ios-filled/50/plant-under-sun.png" class="service-logo"> Plant Delivery <span style="color: red;">(Coming Soon)</span></h3>
+  <img src="https://source.unsplash.com/800x400/?plants" alt="Plant Delivery">
+  <p>Buy fresh indoor and outdoor plants delivered to your home. Coming soon.</p>
+</div>
+
+<div class="service-box">
+  <h3><img src="https://img.icons8.com/ios-filled/50/phone.png" class="service-logo"> Online Calling <span style="color: red;">(Coming Soon)</span></h3>
+  <img src="https://source.unsplash.com/800x400/?video-call" alt="Online Calling">
+  <p>Make free online calls through our app without recharge. Coming soon.</p>
+</div>
+
+  </section>  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Phone: +91-9876543210</p>
+    <p>Email: support@lozistar.com</p>
+  </section>  <footer>
+    <p>&copy; 2025 Lozistar. All rights reserved.</p>
+    <p>FSSAI License No: XXXXXXXXXX | GSTIN: 12ABCDE3456F7Z8</p>
+  </footer>
+</body>
+</html>
