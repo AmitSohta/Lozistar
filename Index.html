@@ -1,110 +1,158 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lozistar – All-in-One Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: Arial, sans-serif; background: #f4f4f4; color: #333; }
-
+    body { font-family: 'Roboto', sans-serif; line-height: 1.6; color: #222; background: #fff; }
     header {
-      background: url('https://source.unsplash.com/1600x600/?city,services') no-repeat center center/cover;
-      height: 100vh;
+      background: linear-gradient(to right, #ff6a00, #ee0979);
       color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      padding: 60px 20px;
       text-align: center;
-      padding: 20px;
+      border-bottom: 1px solid #ddd;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
-
-    header img {
-      width: 100px;
-      height: auto;
-      margin-bottom: 20px;
-      border-radius: 10px;
-    }
-
+    header img { width: 250px; display: block; margin: 0 auto 20px; }
     header h1 {
-      font-size: 3em;
+      font-size: 64px;
       margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.2em;
-    }
-
-    nav {
-      background: #111;
-      display: flex;
-      justify-content: center;
-      padding: 15px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 20px;
       font-weight: bold;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
     }
-
-    nav a:hover {
-      text-decoration: underline;
+    header p {
+      font-size: 22px;
+      margin-top: 5px;
     }
-
-    .intro {
-      padding: 50px 20px;
-      text-align: center;
+    nav { background: #222; color: white; display: flex; justify-content: center; padding: 10px 0; flex-wrap: wrap; }
+    nav a { color: white; text-decoration: none; margin: 5px 15px; }
+    nav a:hover { text-decoration: underline; }
+    section { padding: 60px 20px; max-width: 1000px; margin: auto; }
+    .services img { width: 100px; border-radius: 8px; margin-bottom: 10px; }
+    .service-logo { width: 37px; vertical-align: middle; margin-right: 10px; }
+    .service-box { margin-bottom: 40px; }
+    .service-category {
+      font-size: 28px;
+      font-weight: bold;
+      margin: 40px 0 20px;
+      color: #f12711;
+      border-bottom: 2px solid #f12711;
+      display: inline-block;
     }
-
-    .intro h2 {
-      font-size: 2em;
-      margin-bottom: 10px;
-    }
-
-    .intro p {
-      font-size: 1.1em;
-      color: #555;
-      max-width: 700px;
-      margin: auto;
-    }
-
-    footer {
-      background: #222;
+    .review-box { margin-top: 40px; border-top: 1px solid #ccc; padding-top: 40px; }
+    .review p { margin: 5px 0; }
+    footer { background: #222; color: white; text-align: center; padding: 20px 10px; }
+    .order-button {
+      background-color: #28a745;
       color: white;
-      text-align: center;
-      padding: 20px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 15px;
+      display: inline-block;
+      transition: background-color 0.3s;
     }
+    .order-button:hover { background-color: #218838; }
+    .review-form { margin-top: 30px; }
+    .review-form input, .review-form textarea, .review-form select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .review-form button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .review-form button:hover { background-color: #0056b3; }
   </style>
 </head>
 <body>
-
-  <nav>
-    <a href="#">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
   <header>
-    <!-- ✅ Updated logo below -->
-    <img src="https://lozistar.imgix.net/logo.png" alt="Lozistar Logo" />
-    <h1>Welcome to Lozistar</h1>
-    <p>Everything You Need, One Click Away – Online Hotel, Taxi, Food, and More</p>
-  </header>
+    <img src="lozistar.png" alt="Lozistar Logo">
+    <h1>Lozistar</h1>
+    <p>Everything You Need, One Click Away</p>
+  </header>  <nav>
+    <a href="#services">Services</a>
+    <a href="food.html">Food Order</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms</a>
+    <a href="disclaimer.html">Disclaimer</a>
+    <a href="#contact">Contact</a>
+  </nav>  <section id="services" class="services">
+    <h2>Our Services</h2><div class="service-category">Available Now</div>
 
-  <section class="intro" id="about">
-    <h2>About Lozistar</h2>
-    <p>
-      Lozistar is your all-in-one solution for modern living. From booking hotels and rides to getting food and plants delivered, and even making calls without recharges – we’re building Shimla’s most reliable lifestyle platform.
-    </p>
-  </section>
+<div class="service-box">
+  <h3><img src="https://img.icons8.com/ios-filled/50/meal.png" class="service-logo"> Food Delivery</h3>
+  <img src="https://source.unsplash.com/800x400/?food" alt="Food Delivery">
+  <p>Order delicious meals from local restaurants and get doorstep delivery.</p>
+  <a href="food.html" class="order-button">Order Now</a>
+</div>
 
-  <footer>
-    &copy; 2025 Lozistar. All rights reserved.
+<div class="service-category">Coming Soon</div>
+
+<div class="service-box">
+  <h3><img src="https://img.icons8.com/ios-filled/50/hotel.png" class="service-logo"> Hotel Booking <span style="color: red;">(Coming Soon)</span></h3>
+  <img src="https://source.unsplash.com/800x400/?hotel" alt="Hotel Booking">
+  <p>Book top-rated hotels. Coming soon to Shimla region!</p>
+</div>
+
+<div class="service-box">
+  <h3><img src="https://img.icons8.com/ios-filled/50/car.png" class="service-logo"> Taxi & Bike Booking <span style="color: red;">(Coming Soon)</span></h3>
+  <img src="https://source.unsplash.com/800x400/?taxi" alt="Taxi Booking">
+  <p>Need a ride? Book taxis or bikes in seconds. Coming soon.</p>
+</div>
+
+<div class="service-box">
+  <h3><img src="https://img.icons8.com/ios-filled/50/plant-under-sun.png" class="service-logo"> Plant Delivery <span style="color: red;">(Coming Soon)</span></h3>
+  <img src="https://source.unsplash.com/800x400/?plants" alt="Plant Delivery">
+  <p>Buy fresh indoor and outdoor plants delivered to your home. Coming soon.</p>
+</div>
+
+<div class="service-box">
+  <h3><img src="https://img.icons8.com/ios-filled/50/phone.png" class="service-logo"> Online Calling <span style="color: red;">(Coming Soon)</span></h3>
+  <img src="https://source.unsplash.com/800x400/?video-call" alt="Online Calling">
+  <p>Make free online calls through our app without recharge. Coming soon.</p>
+</div>
+
+  </section>  <section class="review-box">
+    <h2>Customer Reviews</h2>
+    <div class="review-form">
+      <form>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating" required>
+          <option value="">Select Rating</option>
+          <option value="5">★★★★★ Excellent</option>
+          <option value="4">★★★★☆ Very Good</option>
+          <option value="3">★★★☆☆ Good</option>
+          <option value="2">★★☆☆☆ Fair</option>
+          <option value="1">★☆☆☆☆ Poor</option>
+        </select>
+        <label for="message">Your Review:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Submit Review</button>
+      </form>
+    </div>
+  </section>  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Phone: +91-9876543210</p>
+    <p>Email: support@lozistar.com</p>
+    <p>Payment Options: Cash on Delivery, UPI, Google Pay, Paytm, PhonePe</p>
+  </section>  <footer>
+    <p>&copy; 2025 Lozistar. All rights reserved.</p>
+    <p>FSSAI License No: XXXXXXXXXX | GSTIN: 12ABCDE3456F7Z8</p>
   </footer>
-
 </body>
 </html>
